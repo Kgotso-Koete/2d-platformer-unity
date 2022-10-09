@@ -11,8 +11,10 @@ public class PlayerController : MonoBehaviour
     public LayerMask whatIsGround;
     private bool canDoubleJump;
     // Start is called before the first frame update
+    private Animator anim;
     void Start()
     {
+        anim = GetComponent<Animator>();
     }
     // Update is called once per frame
     void Update()
@@ -38,5 +40,7 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+        anim.SetFloat("moveSpeed",Mathf.Abs(theRB.velocity.x));
+        anim.SetBool("isGrounded", isGrounded);
     }
 }
