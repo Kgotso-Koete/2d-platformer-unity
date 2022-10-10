@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
         {
             canDoubleJump = true;
         }
-        // execute jump updates
+        // jump updates
         if (Input.GetButtonDown("Jump"))
         {
             if (isGrounded)
