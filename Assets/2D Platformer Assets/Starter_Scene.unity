@@ -373,6 +373,8 @@ MonoBehaviour:
   target: {fileID: 1304103696}
   farBackground: {fileID: 270509996}
   middleBackground: {fileID: 99542106}
+  minHeight: -1.5
+  maxHeight: 2.5
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -424,7 +426,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -0.14, y: -0.76, z: -10}
   m_LocalScale: {x: 0.6400856, y: 0.1302174, z: 0.6400856}
   m_Children: []
   m_Father: {fileID: 0}
