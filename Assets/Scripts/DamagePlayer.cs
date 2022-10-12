@@ -15,7 +15,7 @@ public class DamagePlayer : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            Debug.Log("Hit");
+            PlayerHealthController.instance.DealDamage();
         }
     }
 }
