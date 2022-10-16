@@ -21,10 +21,15 @@ public class PlayerHealthController : MonoBehaviour
     }
     public void DealDamage()
     {
+        // decrease health
         currentHealth -= 1;
+        // check if health is depleted
         if(currentHealth <= 0)
         {
+            currentHealth = 0;
             gameObject.SetActive(false);
         }
+        // update health UI
+        UIController.instance.updateHealthDisplay();
     }
 }
