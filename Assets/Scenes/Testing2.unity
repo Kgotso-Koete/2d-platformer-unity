@@ -359,6 +359,8 @@ MonoBehaviour:
     type: 3}
   heartEmpty: {fileID: -4390673095631447188, guid: d9a616f95048ea84e8fc6f7920f846b8,
     type: 3}
+  heartHalf: {fileID: 2139837793675082937, guid: d9a616f95048ea84e8fc6f7920f846b8,
+    type: 3}
 --- !u!114 &194761083
 MonoBehaviour:
   m_ObjectHideFlags: 0
