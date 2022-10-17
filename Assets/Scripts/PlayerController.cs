@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController instance;
     public float moveSpeed;
     public Rigidbody2D theRB;
     public float jumpForce;
@@ -13,6 +14,11 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     private Animator anim;
     private SpriteRenderer theSR;
+    public float knockBackLength, knockBackForce;
+    private float knockBackCounter;
+    public void Awake(){
+        instance = this;
+    }
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -21,39 +27,59 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        theRB.velocity = new Vector2(moveSpeed * Input.GetAxis("Horizontal"), theRB.velocity.y);
-        isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, .2f, whatIsGround);
-        // set double jump variable
-        if (isGrounded)
+        if(knockBackCounter <= 0)
         {
-            canDoubleJump = true;
-        }
-        // jump updates
-        if (Input.GetButtonDown("Jump"))
-        {
+            theRB.velocity = new Vector2(moveSpeed * Input.GetAxis("Horizontal"), theRB.velocity.y);
+            isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, .2f, whatIsGround);
+            // set double jump variable
             if (isGrounded)
             {
-                theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
+                canDoubleJump = true;
+            }
+            // jump updates
+            if (Input.GetButtonDown("Jump"))
+            {
+                if (isGrounded)
+                {
+                    theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
+                }
+                else
+                {
+                    if (canDoubleJump)
+                    {
+                        theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
+                        canDoubleJump = false;
+                    }
+                }
+            }
+            // flip animations to the left / make sprite face left
+            if(theRB.velocity.x < 0){
+                theSR.flipX = true;
+            }
+            // flip back to face the right
+            else if(theRB.velocity.x > 0){
+                theSR.flipX = false;
+            }
+        }
+        else
+        {
+            knockBackCounter -= Time.deltaTime;
+            if(!theSR.flipX)
+            {
+                theRB.velocity = new Vector2(-knockBackForce, theRB.velocity.y);
             }
             else
             {
-                if (canDoubleJump)
-                {
-                    theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
-                    canDoubleJump = false;
-                }
+                theRB.velocity = new Vector2(knockBackForce, theRB.velocity.y);
             }
-        }
-        // flip animations to the left / make sprite face left
-        if(theRB.velocity.x < 0){
-            theSR.flipX = true;
-        }
-        // flip back to face the right
-        else if(theRB.velocity.x > 0){
-            theSR.flipX = false;
         }
         // update animation variables
         anim.SetFloat("moveSpeed",Mathf.Abs(theRB.velocity.x));
         anim.SetBool("isGrounded", isGrounded);
+    }
+    public void KnockBack()
+    {
+        knockBackCounter  = knockBackLength;
+        theRB.velocity = new Vector2(0f,knockBackForce);
     }
 }

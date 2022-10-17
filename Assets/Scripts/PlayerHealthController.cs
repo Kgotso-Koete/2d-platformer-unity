@@ -47,6 +47,7 @@ public class PlayerHealthController : MonoBehaviour
                 invincibleCounter = invincibleLength;
                 // make the player transparent
                 theSR.color = new Color(theSR.color.r,theSR.color.g,theSR.color.b,.5f);
+                PlayerController.instance.KnockBack();
             }
             // update health UI
             UIController.instance.updateHealthDisplay();
