@@ -7,10 +7,12 @@ public class PlayerHealthController : MonoBehaviour
     public int currentHealth,maxHealth;
     public float invincibleLength;
     private float invincibleCounter;
+    private SpriteRenderer theSR;
     // initialize singleton to instantiated object
     private void Awake()
     {
         instance = this;
+        theSR = GetComponent<SpriteRenderer>();
     }
     // Start is called before the first frame update
     void Start()
@@ -23,6 +25,11 @@ public class PlayerHealthController : MonoBehaviour
         if(invincibleCounter > 0){
             // decrease by 1 every second by deducting time to between frames each update (60 updates per second for 60 frames per second)
             invincibleCounter -= Time.deltaTime;
+            // reverse player image transparency when invincibility runs out
+            if(invincibleCounter <= 0)
+            {
+                theSR.color = new Color(theSR.color.r,theSR.color.g,theSR.color.b,1);
+            }
         }
     }
     public void DealDamage()
@@ -38,6 +45,8 @@ public class PlayerHealthController : MonoBehaviour
             }
             else{
                 invincibleCounter = invincibleLength;
+                // make the player transparent
+                theSR.color = new Color(theSR.color.r,theSR.color.g,theSR.color.b,.5f);
             }
             // update health UI
             UIController.instance.updateHealthDisplay();
