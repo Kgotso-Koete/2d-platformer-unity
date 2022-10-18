@@ -5,6 +5,7 @@ public class LevelManager : MonoBehaviour
 {
     public static LevelManager instance;
     public float waitToRespawn;
+    public int GemsCollected;
     private void Awake()
     {
         instance = this;
