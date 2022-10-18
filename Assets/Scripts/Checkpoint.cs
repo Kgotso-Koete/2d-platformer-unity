@@ -19,7 +19,9 @@ public class Checkpoint : MonoBehaviour
         {
             // first deactivate all checkpoints
             CheckpointController.instance.DeactivateCheckpoints();
+            // set current checkpoint as on      
             theSR.sprite = cpOn;
+            CheckpointController.instance.SetSpawnPoint(transform.position);
         }
     }
     public void ResetCheckpoint()
