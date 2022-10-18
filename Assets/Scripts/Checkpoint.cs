@@ -17,7 +17,13 @@ public class Checkpoint : MonoBehaviour
     {
         if(other.tag == "Player")
         {
+            // first deactivate all checkpoints
+            CheckpointController.instance.DeactivateCheckpoints();
             theSR.sprite = cpOn;
         }
+    }
+    public void ResetCheckpoint()
+    {
+        theSR.sprite = cpOff;
     }
 }
