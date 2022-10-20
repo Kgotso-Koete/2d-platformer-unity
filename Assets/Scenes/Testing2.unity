@@ -10916,6 +10916,11 @@ PrefabInstance:
       propertyPath: invincibleLength
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 658342209, guid: 465d6a9bd3bd0eb428375eee485bf11b, type: 3}
+      propertyPath: deathEffect
+      value: 
+      objectReference: {fileID: 8504054771591509493, guid: 7ec3949dd8e898340a36c93285652d2f,
+        type: 3}
     - target: {fileID: 1914249683782745801, guid: 465d6a9bd3bd0eb428375eee485bf11b,
         type: 3}
       propertyPath: m_LocalPosition.x
