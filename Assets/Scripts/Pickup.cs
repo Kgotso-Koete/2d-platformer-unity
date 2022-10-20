@@ -22,6 +22,7 @@ public class Pickup : MonoBehaviour
                 LevelManager.instance.GemsCollected ++;
                 isCollected = true;
                 Destroy(gameObject);
+                UIController.instance.UpdateGemCount();    
             }
             if(isHeal)
             {
