@@ -365,7 +365,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0008357465, y: 0.11185706}
+  m_Offset: {x: -0.0008357465, y: 0.07442248}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -376,7 +376,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6112284, y: 0.1733706}
+  m_Size: {x: 0.6112284, y: 0.068553686}
   m_EdgeRadius: 0
 --- !u!114 &188591935
 MonoBehaviour:
@@ -10859,6 +10859,8 @@ GameObject:
   - component: {fileID: 1136837295}
   - component: {fileID: 1136837294}
   - component: {fileID: 1136837297}
+  - component: {fileID: 1136837299}
+  - component: {fileID: 1136837298}
   m_Layer: 0
   m_Name: Enemy Frog
   m_TagString: Untagged
@@ -10914,7 +10916,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1136837293}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 47.71, y: 0.15, z: 0}
+  m_LocalPosition: {x: 47.84, y: 0.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 304074807}
@@ -10941,6 +10943,44 @@ MonoBehaviour:
   theSR: {fileID: 304074809}
   moveTime: 3
   waitTime: 2
+--- !u!114 &1136837298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136837293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4931e7a140ac70c4dbc351f97edf491b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1136837299
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136837293}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.2929287, y: 0.2845919}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.5858574, y: 0.8211131}
+  m_EdgeRadius: 0
 --- !u!1 &1181789619
 GameObject:
   m_ObjectHideFlags: 0

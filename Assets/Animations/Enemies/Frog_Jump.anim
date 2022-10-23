@@ -48,18 +48,55 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.5833333
         value: {x: 0, y: 0.6577229, z: 0}
-        inSlope: {x: 0, y: -3.605882, z: 0}
-        outSlope: {x: 0, y: -3.605882, z: 0}
+        inSlope: {x: 0, y: -11.085947, z: 0}
+        outSlope: {x: 0, y: -11.085947, z: 0}
         tangentMode: 0
         weightedMode: 0
-        inWeight: {x: 0.33333334, y: 0.52277535, z: 0.33333334}
+        inWeight: {x: 0.33333334, y: 0.56050307, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     path: Frog Sprite
   m_ScaleCurves: []
-  m_FloatCurves: []
+  m_FloatCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0.8321078
+        inSlope: 13.8318205
+        outSlope: 13.8318205
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.15310939
+      - serializedVersion: 3
+        time: 0.28333333
+        value: 2.8088923
+        inSlope: 0.41798258
+        outSlope: 0.41798258
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.22749358
+        outWeight: 0.2489486
+      - serializedVersion: 3
+        time: 0.5833333
+        value: 0.6597081
+        inSlope: -11.503404
+        outSlope: -11.503404
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.15995543
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Offset.y
+    path: 
+    classID: 61
+    script: {fileID: 0}
   m_PPtrCurves:
   - curve:
     - time: 0
@@ -90,6 +127,13 @@ AnimationClip:
       attribute: 1
       script: {fileID: 0}
       typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 0
+      attribute: 1872933342
+      script: {fileID: 0}
+      typeID: 61
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
@@ -186,11 +230,11 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.5833333
         value: 0.6577229
-        inSlope: -3.605882
-        outSlope: -3.605882
+        inSlope: -11.085947
+        outSlope: -11.085947
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.52277535
+        inWeight: 0.56050307
         outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -235,6 +279,43 @@ AnimationClip:
     attribute: m_LocalPosition.z
     path: Frog Sprite
     classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0.8321078
+        inSlope: 13.8318205
+        outSlope: 13.8318205
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.15310939
+      - serializedVersion: 3
+        time: 0.28333333
+        value: 2.8088923
+        inSlope: 0.41798258
+        outSlope: 0.41798258
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.22749358
+        outWeight: 0.2489486
+      - serializedVersion: 3
+        time: 0.5833333
+        value: 0.6597081
+        inSlope: -11.503404
+        outSlope: -11.503404
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.15995543
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Offset.y
+    path: 
+    classID: 61
     script: {fileID: 0}
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
