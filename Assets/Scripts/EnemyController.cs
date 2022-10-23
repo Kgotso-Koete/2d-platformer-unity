@@ -8,12 +8,16 @@ public class EnemyController : MonoBehaviour
     private bool movingRight;
     private Rigidbody2D theRB;
     public SpriteRenderer theSR;
+    private Animator anim; 
     public float moveTime, waitTime;
     private float moveCount, waitCount;
     // Start is called before the first frame update
     void Start()
     {
+        // initialize Unity components
         theRB = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        // initialize variables
         leftPoint.parent = null;
         rightPoint.parent = null;
         movingRight = true;
@@ -34,6 +38,8 @@ public class EnemyController : MonoBehaviour
             {
                 waitCount = Random.Range(waitTime * 0.75f, waitTime * 1.25f);
             }
+            // transition from idle to active animation
+            anim.SetBool("isMoving",true);
         }
         // wait code
         else if(waitCount > 0)
@@ -45,6 +51,8 @@ public class EnemyController : MonoBehaviour
             {
                 moveCount = Random.Range(moveTime * 0.75f, waitTime * 0.75f);
             }
+            // transition from active to idle animation
+            anim.SetBool("isMoving",false);
         }
     }
     private void MoveCharacter()
