@@ -18,6 +18,7 @@ public class Stompbox : MonoBehaviour
         {
             other.transform.parent.gameObject.SetActive(false);
             Instantiate(deathEffect, other.transform.position, other.transform.rotation);
+            PlayerController.instance.Bounce();
         }
     }
 }

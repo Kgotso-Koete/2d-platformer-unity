@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer theSR;
     public float knockBackLength, knockBackForce;
     private float knockBackCounter;
+    public float bounceForce;
     public void Awake(){
         instance = this;
     }
@@ -82,5 +83,9 @@ public class PlayerController : MonoBehaviour
         knockBackCounter  = knockBackLength;
         theRB.velocity = new Vector2(0f,knockBackForce);
         anim.SetTrigger("hurt");
+    }
+    public void Bounce()
+    {
+        theRB.velocity = new Vector2(theRB.velocity.x,bounceForce);
     }
 }
