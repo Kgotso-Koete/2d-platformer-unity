@@ -50,6 +50,7 @@ public class PlayerHealthController : MonoBehaviour
                 // make the player transparent
                 theSR.color = new Color(theSR.color.r,theSR.color.g,theSR.color.b,.5f);
                 PlayerController.instance.KnockBack();
+                AudioManager.instance.PlaySFX(9);
             }
             // update health UI
             UIController.instance.updateHealthDisplay();
