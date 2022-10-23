@@ -8,6 +8,8 @@ public class EnemyController : MonoBehaviour
     private bool movingRight;
     private Rigidbody2D theRB;
     public SpriteRenderer theSR;
+    public float moveTime, waitTime;
+    private float moveCount, waitCount;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,9 +17,37 @@ public class EnemyController : MonoBehaviour
         leftPoint.parent = null;
         rightPoint.parent = null;
         movingRight = true;
+        moveCount = moveTime;
     }
     // Update is called once per frame
     void Update()
+    {
+        // move code
+        if(moveCount > 0)
+        {
+            // update moveCount at same rate as framerate
+            moveCount -= Time.deltaTime;
+            // move the character
+            MoveCharacter();
+            // refill waitCount if moveCount is counted down to 0
+            if(moveCount <=0)
+            {
+                waitCount = Random.Range(waitTime * 0.75f, waitTime * 1.25f);
+            }
+        }
+        // wait code
+        else if(waitCount > 0)
+        {
+            waitCount -= Time.deltaTime;
+            theRB.velocity = new Vector2(0f,theRB.velocity.y);
+            // refill moveCount if waitCount is counted down to 0
+            if(waitCount <= 0)
+            {
+                moveCount = Random.Range(moveTime * 0.75f, waitTime * 0.75f);
+            }
+        }
+    }
+    private void MoveCharacter()
     {
         if(movingRight)
         {
@@ -31,7 +61,7 @@ public class EnemyController : MonoBehaviour
         else
         {
             theRB.velocity = new Vector2(-moveSpeed, theRB.velocity.y);
-            theSR.flipX = false;            
+            theSR.flipX = false;
             if(transform.position.x < leftPoint.position.x)
             {
                 movingRight = true;
