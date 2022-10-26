@@ -24,9 +24,15 @@ public class LevelManager : MonoBehaviour
     }
     private IEnumerator RespawnCo()
     {
+        // deactivate player and wait for some time
         PlayerController.instance.gameObject.SetActive(false);
         AudioManager.instance.PlaySFX(8);
-        yield return new WaitForSeconds(waitToRespawn);
+        // wait for some time and fade the screen to and from black
+        yield return new WaitForSeconds(waitToRespawn - (1f / UIController.instance.fadeSpeed));
+        UIController.instance.FadeToBlack();
+        yield return new WaitForSeconds((1f / UIController.instance.fadeSpeed) + 0.2f);
+        UIController.instance.FadeFromBlack();
+        // reactivate player
         PlayerController.instance.gameObject.SetActive(true);
         PlayerController.instance.transform.position = CheckpointController.instance.spawnPoint;
         PlayerHealthController.instance.currentHealth = PlayerHealthController.instance.maxHealth;
