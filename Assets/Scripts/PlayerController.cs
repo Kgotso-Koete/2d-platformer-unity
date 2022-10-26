@@ -28,52 +28,16 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(knockBackCounter <= 0)
+        if(!PauseMenu.instance.isPaused)
         {
-            theRB.velocity = new Vector2(moveSpeed * Input.GetAxis("Horizontal"), theRB.velocity.y);
-            isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, .2f, whatIsGround);
-            // set double jump variable
-            if (isGrounded)
+            if(knockBackCounter <= 0)
             {
-                canDoubleJump = true;
-            }
-            // jump updates
-            if (Input.GetButtonDown("Jump"))
-            {
-                if (isGrounded)
-                {
-                    theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
-                    AudioManager.instance.PlaySFX(10);
-                }
-                else
-                {
-                    if (canDoubleJump)
-                    {
-                        theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
-                        canDoubleJump = false;
-                        AudioManager.instance.PlaySFX(10);
-                    }
-                }
-            }
-            // flip animations to the left / make sprite face left
-            if(theRB.velocity.x < 0){
-                theSR.flipX = true;
-            }
-            // flip back to face the right
-            else if(theRB.velocity.x > 0){
-                theSR.flipX = false;
-            }
-        }
-        else
-        {
-            knockBackCounter -= Time.deltaTime;
-            if(!theSR.flipX)
-            {
-                theRB.velocity = new Vector2(-knockBackForce, theRB.velocity.y);
+                Jump();
+                FaceLeftOrRight();
             }
             else
             {
-                theRB.velocity = new Vector2(knockBackForce, theRB.velocity.y);
+                KnockBackOnXAxis();
             }
         }
         // update animation variables
@@ -89,6 +53,57 @@ public class PlayerController : MonoBehaviour
     public void Bounce()
     {
         theRB.velocity = new Vector2(theRB.velocity.x,bounceForce);
-        AudioManager.instance.PlaySFX(10);   
+        AudioManager.instance.PlaySFX(10);
+    }
+    private void FaceLeftOrRight()
+    {
+        // flip animations to the left / make sprite face left
+        if(theRB.velocity.x < 0){
+            theSR.flipX = true;
+        }
+        // flip back to face the right
+        else if(theRB.velocity.x > 0){
+            theSR.flipX = false;
+        }
+    }
+    private void Jump()
+    {
+        theRB.velocity = new Vector2(moveSpeed * Input.GetAxis("Horizontal"), theRB.velocity.y);
+        isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, .2f, whatIsGround);
+        // set double jump variable
+        if (isGrounded)
+        {
+            canDoubleJump = true;
+        }
+        // jump updates
+        if (Input.GetButtonDown("Jump"))
+        {
+            if (isGrounded)
+            {
+                theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
+                AudioManager.instance.PlaySFX(10);
+            }
+            else
+            {
+                if (canDoubleJump)
+                {
+                    theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
+                    canDoubleJump = false;
+                    AudioManager.instance.PlaySFX(10);
+                }
+            }
+        }
+    }
+    private void KnockBackOnXAxis()
+    {
+        knockBackCounter -= Time.deltaTime;
+        if(!theSR.flipX)
+        {
+            theRB.velocity = new Vector2(-knockBackForce, theRB.velocity.y);
+        }
+        else
+        {
+            theRB.velocity = new Vector2(knockBackForce, theRB.velocity.y);
+        }
     }
 }

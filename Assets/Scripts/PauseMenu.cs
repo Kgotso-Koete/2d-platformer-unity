@@ -4,9 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
+    public static PauseMenu instance;
     public string levelSelect, mainMenu;
     public GameObject pauseScreen;
     public bool isPaused;
+     private void Awake(){
+        instance = this;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +29,7 @@ public class PauseMenu : MonoBehaviour
         {
             isPaused = false;
             pauseScreen.SetActive(false);
-            Time.timeScale= 1; // continue the game with a time scale of 1
+            Time.timeScale= 1f; // continue the game with a time scale of 1
         }else{
             isPaused = true;
             pauseScreen.SetActive(true);
@@ -35,9 +39,11 @@ public class PauseMenu : MonoBehaviour
     public void LevelSelect()
     {
         SceneManager.LoadScene(levelSelect);
+        Time.timeScale= 1f; // continue the game with a time scale of 1
     }
     public void MainMenu()
     {
         SceneManager.LoadScene(mainMenu);
+        Time.timeScale= 1f; // continue the game with a time scale of 1
     }
 }
