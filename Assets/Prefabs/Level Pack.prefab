@@ -304,7 +304,7 @@ RectTransform:
   - {fileID: 7859838521221280372}
   - {fileID: 7859838519887654524}
   m_Father: {fileID: 3200565394836061406}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -563,7 +563,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3200565394836061406}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -592,7 +592,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -760,7 +760,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3200565394836061406}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: -0.028, y: 0.080000006, z: 9.735001}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1009,9 +1009,9 @@ RectTransform:
   - {fileID: 3200565394812726158}
   - {fileID: 3200565393927345207}
   - {fileID: 3200565395044987720}
+  - {fileID: 3200565394184938576}
   - {fileID: 3200565393942974091}
   - {fileID: 3200565394303814347}
-  - {fileID: 3200565394184938576}
   m_Father: {fileID: 3095272633761282260}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2173,6 +2173,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db7e6163a5ae2ab40bdff741624fe0f9, type: 3}
+--- !u!4 &1703916214374253074 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4309724391452685693, guid: db7e6163a5ae2ab40bdff741624fe0f9,
+    type: 3}
+  m_PrefabInstance: {fileID: 3200565394650822511}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1703916214285628257 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4309724391363838990, guid: db7e6163a5ae2ab40bdff741624fe0f9,
@@ -2182,12 +2188,6 @@ Transform:
 --- !u!4 &1703916214582968804 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4309724391810201227, guid: db7e6163a5ae2ab40bdff741624fe0f9,
-    type: 3}
-  m_PrefabInstance: {fileID: 3200565394650822511}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1703916214374253074 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4309724391452685693, guid: db7e6163a5ae2ab40bdff741624fe0f9,
     type: 3}
   m_PrefabInstance: {fileID: 3200565394650822511}
   m_PrefabAsset: {fileID: 0}
