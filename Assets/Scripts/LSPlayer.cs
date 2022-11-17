@@ -25,16 +25,20 @@ public class LSPlayer : MonoBehaviour
     {
         if(currentPoint.isLevel && currentPoint.levelToLoad != "" && !currentPoint.isLocked)
         {
+            // show level name
+            LSUIController.instance.ShowInfo(currentPoint);
+            // load level
             if(Input.GetButtonDown("Jump"))
             {
                 levelLoading = true;
                 theManager.LoadLevel();
             }
-        }  
+        }
     }
     public void SetNextPoint(MapPoint nextPoint)
     {
         currentPoint = nextPoint;
+        LSUIController.instance.HideInfo(); 
     }
     private void MovePlayer()
     {
