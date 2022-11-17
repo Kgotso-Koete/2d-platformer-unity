@@ -18,15 +18,19 @@ public class LSPlayer : MonoBehaviour
         if(Vector3.Distance(transform.position, currentPoint.transform.position ) < 0.1f && !levelLoading)
         {
             MovePlayer();
-            if(currentPoint.isLevel)
-            {
-                if(Input.GetButtonDown("Jump"))
-                {
-                    levelLoading = true;
-                    theManager.LoadLevel();
-                }
-            }
+            LoadLevel();
         }
+    }
+    public void LoadLevel()
+    {
+        if(currentPoint.isLevel && currentPoint.levelToLoad != "" && !currentPoint.isLocked)
+        {
+            if(Input.GetButtonDown("Jump"))
+            {
+                levelLoading = true;
+                theManager.LoadLevel();
+            }
+        }  
     }
     public void SetNextPoint(MapPoint nextPoint)
     {
