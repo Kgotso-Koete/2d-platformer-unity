@@ -6779,6 +6779,16 @@ PrefabInstance:
       propertyPath: levelName
       value: '3: Act 3'
       objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: targetTime
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: totalGems
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7831762975843583333, guid: 5e18eea46f2aec94ba03b4583c741f31,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7013,6 +7023,16 @@ PrefabInstance:
         type: 3}
       propertyPath: levelName
       value: '4: Act 4'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: targetTime
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: totalGems
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7831762975843583333, guid: 5e18eea46f2aec94ba03b4583c741f31,
         type: 3}
@@ -8950,6 +8970,16 @@ PrefabInstance:
       propertyPath: levelName
       value: '2: High Jump'
       objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: targetTime
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: totalGems
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7831762975843583333, guid: 5e18eea46f2aec94ba03b4583c741f31,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9635,6 +9665,16 @@ PrefabInstance:
         type: 3}
       propertyPath: gemsCollected
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: targetTime
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: totalGems
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7831762975843583333, guid: 5e18eea46f2aec94ba03b4583c741f31,
         type: 3}

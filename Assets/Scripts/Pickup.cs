@@ -20,7 +20,7 @@ public class Pickup : MonoBehaviour
         {
             if(isGem)
             {
-                LevelManager.instance.GemsCollected ++;
+                LevelManager.instance.gemsCollected ++; 
                 isCollected = true;
                 Destroy(gameObject);
                 Instantiate(pickupEffect,transform.position, transform.rotation);

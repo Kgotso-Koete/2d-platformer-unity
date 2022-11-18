@@ -11,7 +11,7 @@ public class UIController : MonoBehaviour
     public Image fadeScreen;
     public float fadeSpeed;
     private bool shouldFadeToBlack, shouldFadeFromBlack;
-    public GameObject levelCompleteText;   
+    public GameObject levelCompleteText;
     private void Awake()
     {
         instance = this;
@@ -90,7 +90,7 @@ public class UIController : MonoBehaviour
     }
     public void UpdateGemCount()
     {
-        gemText.text = LevelManager.instance.GemsCollected.ToString();
+        gemText.text = LevelManager.instance.gemsCollected.ToString();
     }
     public void FadeToBlack()
     {
