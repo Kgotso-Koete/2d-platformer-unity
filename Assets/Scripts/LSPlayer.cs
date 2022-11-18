@@ -38,7 +38,8 @@ public class LSPlayer : MonoBehaviour
     public void SetNextPoint(MapPoint nextPoint)
     {
         currentPoint = nextPoint;
-        LSUIController.instance.HideInfo(); 
+        LSUIController.instance.HideInfo();
+        AudioManager.instance.PlaySFX(5); 
     }
     private void MovePlayer()
     {
