@@ -56,8 +56,31 @@ public class LevelManager : MonoBehaviour
         UIController.instance.FadeToBlack();
         yield return new WaitForSeconds((1f / UIController.instance.fadeSpeed) + 0.25f);
         PlayerPrefs.SetInt(SceneManager.GetActiveScene().name + "_unlocked", 1);
-        PlayerPrefs.SetInt(SceneManager.GetActiveScene().name + "_gems",gemsCollected); 
-        PlayerPrefs.SetFloat(SceneManager.GetActiveScene().name + "_time", timeInLevel);
+        // record gems collected in level stats
+        if(PlayerPrefs.HasKey(SceneManager.GetActiveScene().name + "_gems"))
+        {
+            if(gemsCollected > PlayerPrefs.GetInt(SceneManager.GetActiveScene().name + "_gems"))
+            {
+                PlayerPrefs.SetInt(SceneManager.GetActiveScene().name + "_gems",gemsCollected);
+            }
+        }
+        else
+        {
+            PlayerPrefs.SetInt(SceneManager.GetActiveScene().name + "_gems",gemsCollected);
+        }
+        // record  time duration in level stats
+        if(PlayerPrefs.HasKey(SceneManager.GetActiveScene().name + "_time"))
+        {
+            if(timeInLevel < PlayerPrefs.GetFloat(SceneManager.GetActiveScene().name + "_time"))
+            {
+                PlayerPrefs.SetFloat(SceneManager.GetActiveScene().name + "_time", timeInLevel);
+            }
+        }
+        else
+        {
+            PlayerPrefs.SetFloat(SceneManager.GetActiveScene().name + "_time", timeInLevel);
+        }
+        // load next scene
         SceneManager.LoadScene(levelToLoad);
     }
 }
