@@ -38,12 +38,13 @@ public class PauseMenu : MonoBehaviour
     }
     public void LevelSelect()
     {
+        PlayerPrefs.SetString("CurrentLevel", SceneManager.GetActiveScene().name);
         SceneManager.LoadScene(levelSelect);
         Time.timeScale= 1f; // continue the game with a time scale of 1
     }
     public void MainMenu()
     {
-        SceneManager.LoadScene(mainMenu);
+        SceneManager.LoadScene(mainMenu);          
         Time.timeScale= 1f; // continue the game with a time scale of 1
     }
 }
