@@ -143,6 +143,36 @@ PrefabInstance:
       propertyPath: right
       value: 
       objectReference: {fileID: 1069199387}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: isLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: levelToLoad
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: levelToCheck
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: levelName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: totalGems
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: targetTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7831762975843583333, guid: 5e18eea46f2aec94ba03b4583c741f31,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6384,6 +6414,36 @@ PrefabInstance:
       propertyPath: down
       value: 
       objectReference: {fileID: 385907332}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: isLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: levelToLoad
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: levelToCheck
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: levelName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: totalGems
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: targetTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7831762975843583333, guid: 5e18eea46f2aec94ba03b4583c741f31,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6481,6 +6541,36 @@ PrefabInstance:
       propertyPath: right
       value: 
       objectReference: {fileID: 322286254}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: isLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: levelToLoad
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: levelToCheck
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: levelName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: totalGems
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: targetTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7831762975843583333, guid: 5e18eea46f2aec94ba03b4583c741f31,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6899,7 +6989,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &345535038
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7282,7 +7372,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.4000244, y: 43.5}
+  m_AnchoredPosition: {x: 4.3999023, y: 43.5}
   m_SizeDelta: {x: 507.88, y: 99.715}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &453600784
@@ -8460,6 +8550,36 @@ PrefabInstance:
       propertyPath: up
       value: 
       objectReference: {fileID: 325802506}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: isLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: levelToLoad
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: levelToCheck
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: levelName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: totalGems
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: targetTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7831762975843583333, guid: 5e18eea46f2aec94ba03b4583c741f31,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8557,6 +8677,36 @@ PrefabInstance:
       propertyPath: down
       value: 
       objectReference: {fileID: 1710908040}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: isLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: levelToLoad
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: levelToCheck
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: levelName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: totalGems
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: targetTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7831762975843583333, guid: 5e18eea46f2aec94ba03b4583c741f31,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8713,6 +8863,36 @@ PrefabInstance:
       propertyPath: right
       value: 
       objectReference: {fileID: 1627431113}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: isLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: levelToLoad
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: levelToCheck
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: levelName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: totalGems
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: targetTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7831762975843583333, guid: 5e18eea46f2aec94ba03b4583c741f31,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8792,6 +8972,36 @@ PrefabInstance:
       propertyPath: down
       value: 
       objectReference: {fileID: 1895535581}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: isLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: levelToLoad
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: levelToCheck
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: levelName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: totalGems
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: targetTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7831762975843583333, guid: 5e18eea46f2aec94ba03b4583c741f31,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8871,6 +9081,36 @@ PrefabInstance:
       propertyPath: right
       value: 
       objectReference: {fileID: 1533299740}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: isLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: levelToLoad
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: levelToCheck
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: levelName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: totalGems
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: targetTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7831762975843583333, guid: 5e18eea46f2aec94ba03b4583c741f31,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9095,6 +9335,36 @@ PrefabInstance:
       propertyPath: right
       value: 
       objectReference: {fileID: 1123694692}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: isLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: levelToLoad
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: levelToCheck
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: levelName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: totalGems
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: targetTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7831762975843583333, guid: 5e18eea46f2aec94ba03b4583c741f31,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9567,6 +9837,36 @@ PrefabInstance:
       propertyPath: up
       value: 
       objectReference: {fileID: 162466268}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: isLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: levelToLoad
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: levelToCheck
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: levelName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: totalGems
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
+        type: 3}
+      propertyPath: targetTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7831762975843583333, guid: 5e18eea46f2aec94ba03b4583c741f31,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9638,44 +9938,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
         type: 3}
-      propertyPath: isLevel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
-        type: 3}
       propertyPath: up
       value: 
       objectReference: {fileID: 1637125569}
-    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
-        type: 3}
-      propertyPath: levelToLoad
-      value: Level1-1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
-        type: 3}
-      propertyPath: levelToCheck
-      value: Level1-1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
-        type: 3}
-      propertyPath: levelName
-      value: '1: The Beginning'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
-        type: 3}
-      propertyPath: gemsCollected
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
-        type: 3}
-      propertyPath: targetTime
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
-        type: 3}
-      propertyPath: totalGems
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7831762975843583333, guid: 5e18eea46f2aec94ba03b4583c741f31,
         type: 3}
       propertyPath: m_LocalPosition.x
