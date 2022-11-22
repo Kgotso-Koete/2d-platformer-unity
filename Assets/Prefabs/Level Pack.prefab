@@ -1413,6 +1413,27 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3095272633761282260}
     m_Modifications:
+    - target: {fileID: 2998703375995416538, guid: fc53e3cf0c5388c4f9346f10b44cab62,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -6248381100220859151, guid: c867350e6fddd83489ce700602ed860e,
+        type: 2}
+    - target: {fileID: 2998703375995416538, guid: fc53e3cf0c5388c4f9346f10b44cab62,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2998703375995416538, guid: fc53e3cf0c5388c4f9346f10b44cab62,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2998703376131197547, guid: fc53e3cf0c5388c4f9346f10b44cab62,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2998703377134924016, guid: fc53e3cf0c5388c4f9346f10b44cab62,
         type: 3}
       propertyPath: m_Name
@@ -2081,6 +2102,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632432375040005809, guid: 203e5b2e9a4054c4c99476bdb6319a99,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1632432375040005810, guid: 203e5b2e9a4054c4c99476bdb6319a99,
         type: 3}

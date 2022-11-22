@@ -12197,6 +12197,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3200565393164086404, guid: 50aca68046abf0341bb0325603a00487,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -6248381100220859151, guid: c867350e6fddd83489ce700602ed860e,
+        type: 2}
+    - target: {fileID: 3200565393164086404, guid: 50aca68046abf0341bb0325603a00487,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3200565393164086404, guid: 50aca68046abf0341bb0325603a00487,
+        type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3200565393267362101, guid: 50aca68046abf0341bb0325603a00487,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3200565393267362101, guid: 50aca68046abf0341bb0325603a00487,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3200565393267362101, guid: 50aca68046abf0341bb0325603a00487,
+        type: 3}
+      propertyPath: BypassReverbZones
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3200565394184938573, guid: 50aca68046abf0341bb0325603a00487,
         type: 3}
       propertyPath: m_IsActive
