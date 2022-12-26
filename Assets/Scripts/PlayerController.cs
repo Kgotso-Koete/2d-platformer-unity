@@ -106,5 +106,5 @@ public class PlayerController : MonoBehaviour
         {
             theRB.velocity = new Vector2(knockBackForce, theRB.velocity.y);
         }
-    }
+    } 
 }
