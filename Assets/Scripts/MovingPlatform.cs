@@ -5,7 +5,7 @@ public class MovingPlatform : MonoBehaviour
 {
     public Transform[] points;
     public float moveSpeed;
-    public int currentPoint;
+    private int currentPoint;         
     public Transform platform;
     // Start is called before the first frame update
     void Start()
