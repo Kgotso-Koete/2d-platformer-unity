@@ -24,5 +24,6 @@ public class BossTankMine : MonoBehaviour
     {
         Destroy(gameObject);
         Instantiate(explosion, transform.position, transform.rotation);
+        AudioManager.instance.PlaySFX(3);
     }
 }

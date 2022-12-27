@@ -1413,27 +1413,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3095272633761282260}
     m_Modifications:
-    - target: {fileID: 2998703375995416538, guid: fc53e3cf0c5388c4f9346f10b44cab62,
-        type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: -6248381100220859151, guid: c867350e6fddd83489ce700602ed860e,
-        type: 2}
-    - target: {fileID: 2998703375995416538, guid: fc53e3cf0c5388c4f9346f10b44cab62,
-        type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2998703375995416538, guid: fc53e3cf0c5388c4f9346f10b44cab62,
+    - target: {fileID: 658978377484220900, guid: fc53e3cf0c5388c4f9346f10b44cab62,
         type: 3}
       propertyPath: Loop
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 658978377484220900, guid: fc53e3cf0c5388c4f9346f10b44cab62,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2790005229186765214, guid: fc53e3cf0c5388c4f9346f10b44cab62,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2998703376131197547, guid: fc53e3cf0c5388c4f9346f10b44cab62,
         type: 3}
       propertyPath: m_PlayOnAwake
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2998703377134924014, guid: fc53e3cf0c5388c4f9346f10b44cab62,
+        type: 3}
+      propertyPath: bossMusic
+      value: 
+      objectReference: {fileID: 923819317958589114}
     - target: {fileID: 2998703377134924016, guid: fc53e3cf0c5388c4f9346f10b44cab62,
         type: 3}
       propertyPath: m_Name
@@ -1499,6 +1503,12 @@ PrefabInstance:
 --- !u!4 &3200565394304185263 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2998703377134924017, guid: fc53e3cf0c5388c4f9346f10b44cab62,
+    type: 3}
+  m_PrefabInstance: {fileID: 429875587105719134}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &923819317958589114 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 658978377484220900, guid: fc53e3cf0c5388c4f9346f10b44cab62,
     type: 3}
   m_PrefabInstance: {fileID: 429875587105719134}
   m_PrefabAsset: {fileID: 0}
@@ -2205,15 +2215,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db7e6163a5ae2ab40bdff741624fe0f9, type: 3}
---- !u!4 &1703916214374253074 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4309724391452685693, guid: db7e6163a5ae2ab40bdff741624fe0f9,
-    type: 3}
-  m_PrefabInstance: {fileID: 3200565394650822511}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1703916214285628257 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4309724391363838990, guid: db7e6163a5ae2ab40bdff741624fe0f9,
+    type: 3}
+  m_PrefabInstance: {fileID: 3200565394650822511}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1703916214374253074 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4309724391452685693, guid: db7e6163a5ae2ab40bdff741624fe0f9,
     type: 3}
   m_PrefabInstance: {fileID: 3200565394650822511}
   m_PrefabAsset: {fileID: 0}
