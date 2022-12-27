@@ -82,7 +82,7 @@ public class BossTankController : MonoBehaviour
                 mineCounter -= Time.deltaTime;
                 if(mineCounter <= 0)
                 {
-                    mineCounter = timeBetweenMines;  
+                    mineCounter = timeBetweenMines;
                     Instantiate(mine,minePoint.position, minePoint.rotation);
                 }
                 break;
@@ -99,6 +99,15 @@ public class BossTankController : MonoBehaviour
         currentState = bossStates.hurt;
         hurtCounter = hurtTime;
         anim.SetTrigger("Hit");
+        // remove existing mines
+        BossTankMine[] mines = FindObjectsOfType<BossTankMine>();
+        if(mines.Length > 0)
+        {
+            foreach (BossTankMine foundMine in mines)
+            {
+                foundMine.Explode();    
+            }
+        }
     }
     private void EndMovement()
     {
