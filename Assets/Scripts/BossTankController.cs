@@ -26,7 +26,7 @@ public class BossTankController : MonoBehaviour
     public GameObject hitBox;
     [Header("Health")]
     public int health = 5;
-    public GameObject explosion;
+    public GameObject explosion, winPlatform;
     private bool isDefeated;
     public float shotSpeedUp, mineSpeedUp;
     // Start is called before the first frame update
@@ -64,6 +64,8 @@ public class BossTankController : MonoBehaviour
                         {
                             theBoss.gameObject.SetActive(false);
                             Instantiate(explosion, theBoss.position,theBoss.rotation);
+                            winPlatform.SetActive(true);
+                            Debug.Log("Boss defeated!");
                             currentState = bossStates.ended;
                         }
                     }
@@ -128,7 +130,7 @@ public class BossTankController : MonoBehaviour
         else
         {
             timeBetweenShots /= shotSpeedUp;
-            timeBetweenMines /= mineSpeedUp;                 
+            timeBetweenMines /= mineSpeedUp;
         }
     }
     private void EndMovement()

@@ -908,7 +908,7 @@ GameObject:
   - component: {fileID: 3200565394829607581}
   - component: {fileID: 3200565394829607582}
   - component: {fileID: 3200565394829607583}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: Stomp Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1521,12 +1521,12 @@ PrefabInstance:
     - target: {fileID: 1914249683782745801, guid: 465d6a9bd3bd0eb428375eee485bf11b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -38.873398
+      value: -130
       objectReference: {fileID: 0}
     - target: {fileID: 1914249683782745801, guid: 465d6a9bd3bd0eb428375eee485bf11b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.309763
+      value: 3.66
       objectReference: {fileID: 0}
     - target: {fileID: 1914249683782745801, guid: 465d6a9bd3bd0eb428375eee485bf11b,
         type: 3}
