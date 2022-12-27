@@ -10776,6 +10776,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ef89e6464b91bf40a03086ce635e786, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 0
   theBoss: {fileID: 837088057}
   anim: {fileID: 837088058}
   moveSpeed: 13
@@ -11098,12 +11099,12 @@ PrefabInstance:
     - target: {fileID: 3961609343431669848, guid: 50aca68046abf0341bb0325603a00487,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -169.3
+      value: -130
       objectReference: {fileID: 0}
     - target: {fileID: 3961609343431669848, guid: 50aca68046abf0341bb0325603a00487,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.33
+      value: 3.66
       objectReference: {fileID: 0}
     - target: {fileID: 8969565942556735930, guid: 50aca68046abf0341bb0325603a00487,
         type: 3}

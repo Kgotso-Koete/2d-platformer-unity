@@ -32,9 +32,30 @@ public class BossTankController : MonoBehaviour
             case bossStates.shooting:
                 break;
             case bossStates.hurt:
+                if(hurtCounter > 0)
+                {
+                    // count down
+                    hurtCounter -= Time.deltaTime;
+                    // change state
+                    if(hurtCounter <= 0)
+                    {
+                        currentState = bossStates.moving;
+                    }
+                }
                 break;
             case bossStates.moving:
                 break;
         }
+        #if UNITY_EDITOR
+        if(Input.GetKeyDown(KeyCode.H))
+        {
+            TakeHit();
+        }
+        #endif
+    }
+    public void TakeHit()
+    {
+        currentState = bossStates.hurt;
+        hurtCounter = hurtTime;
     }
 }
