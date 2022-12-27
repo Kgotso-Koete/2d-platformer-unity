@@ -10790,6 +10790,11 @@ MonoBehaviour:
   timeBetweenShots: 1.5
   hurtTime: 1
   hitBox: {fileID: 1621553343}
+  health: 5
+  explosion: {fileID: 8504054771591509493, guid: 7ec3949dd8e898340a36c93285652d2f,
+    type: 3}
+  shotSpeedUp: 1.2
+  mineSpeedUp: 1.2
 --- !u!1 &484303670
 GameObject:
   m_ObjectHideFlags: 0

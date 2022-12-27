@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class BossTankController : MonoBehaviour
 {
-    public enum bossStates {shooting, hurt, moving};
+    public enum bossStates {shooting, hurt, moving, ended};
     public bossStates currentState;
     public Transform theBoss;
     public Animator anim;
@@ -24,6 +24,11 @@ public class BossTankController : MonoBehaviour
     public float hurtTime;
     private float hurtCounter;
     public GameObject hitBox;
+    [Header("Health")]
+    public int health = 5;
+    public GameObject explosion;
+    private bool isDefeated;
+    public float shotSpeedUp, mineSpeedUp;
     // Start is called before the first frame update
     void Start()
     {
@@ -55,6 +60,12 @@ public class BossTankController : MonoBehaviour
                     {
                         currentState = bossStates.moving;
                         mineCounter = 0;
+                        if(isDefeated)
+                        {
+                            theBoss.gameObject.SetActive(false);
+                            Instantiate(explosion, theBoss.position,theBoss.rotation);
+                            currentState = bossStates.ended;
+                        }
                     }
                 }
                 break;
@@ -105,8 +116,19 @@ public class BossTankController : MonoBehaviour
         {
             foreach (BossTankMine foundMine in mines)
             {
-                foundMine.Explode();    
+                foundMine.Explode();
             }
+        }
+        // reduce boss health
+        health --;
+        if(health <= 0)
+        {
+            isDefeated = true;
+        }
+        else
+        {
+            timeBetweenShots /= shotSpeedUp;
+            timeBetweenMines /= mineSpeedUp;                 
         }
     }
     private void EndMovement()
