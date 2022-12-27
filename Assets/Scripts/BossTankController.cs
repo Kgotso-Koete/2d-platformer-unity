@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 public class BossTankController : MonoBehaviour
 {
+    public enum bossStates {shooting, hurt, moving};
+    public bossStates currentState;
     public Transform theBoss;
     public Animator anim;
     [Header("Movement")]
@@ -20,9 +22,19 @@ public class BossTankController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        currentState = bossStates.shooting;
     }
     // Update is called once per frame
     void Update()
     {
+        switch(currentState)
+        {
+            case bossStates.shooting:
+                break;
+            case bossStates.hurt:
+                break;
+            case bossStates.moving:
+                break;
+        }
     }
 }
