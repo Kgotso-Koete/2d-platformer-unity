@@ -49,10 +49,9 @@ public class BossTankController : MonoBehaviour
                     theBoss.position += new Vector3(moveSpeed * Time.deltaTime, 0f, 0f);
                     if(theBoss.position.x > rightPoint.position.x)
                     {
-                        theBoss.localScale = Vector3.one; 
+                        theBoss.localScale = Vector3.one;
                         moveRight = false;
-                        currentState = bossStates.shooting;
-                        shotCounter = timeBetweenShots;
+                        EndMovement();
                     }
                 }
                 else
@@ -62,8 +61,7 @@ public class BossTankController : MonoBehaviour
                     {
                         theBoss.localScale = new Vector3(-1f,1f,1f);
                         moveRight = true;
-                        currentState = bossStates.shooting;
-                        shotCounter = timeBetweenShots;
+                        EndMovement();
                     }
                 }
                 break;
@@ -79,5 +77,12 @@ public class BossTankController : MonoBehaviour
     {
         currentState = bossStates.hurt;
         hurtCounter = hurtTime;
+        anim.SetTrigger("Hit");
+    }
+    private void EndMovement()
+    {
+        currentState = bossStates.shooting;
+        shotCounter = timeBetweenShots;
+        anim.SetTrigger("StopMoving");
     }
 }
