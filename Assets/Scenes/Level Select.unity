@@ -9221,7 +9221,7 @@ PrefabInstance:
     - target: {fileID: 1735209309653277835, guid: 5e18eea46f2aec94ba03b4583c741f31,
         type: 3}
       propertyPath: totalGems
-      value: 10
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7831762975843583333, guid: 5e18eea46f2aec94ba03b4583c741f31,
         type: 3}
