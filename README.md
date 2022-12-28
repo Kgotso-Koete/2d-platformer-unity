@@ -17,7 +17,7 @@ This is a 2d unity platformer game built while following [James Doyle](https://w
 
 |             Start Screen             |             Game Screen             |
 | :----------------------------------: | :---------------------------------: |
-| ![](/screenshots/main-menu.png)      | ![](/screenshots/game_screen.png)   |
+| ![](/screenshots/main-menu.png)      | ![](/screenshots/game.png)          |
 |             Level Select             |             Pause Screen            |
 | :----------------------------------: | :---------------------------------: |
 | ![](/screenshots/level-select.png)   | ![](/screenshots/pause.png)         |
