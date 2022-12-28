@@ -1445,7 +1445,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Controls: Move with arrow keys/wasd, jump with space bar. Jump on enemies
-    to destroy them.'
+    to destroy them. Press ESC to pause.'
 --- !u!1 &8969565942556735930
 GameObject:
   m_ObjectHideFlags: 0
