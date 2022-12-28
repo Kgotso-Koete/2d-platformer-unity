@@ -25,7 +25,7 @@ public class BossTankController : MonoBehaviour
     private float hurtCounter;
     public GameObject hitBox;
     [Header("Health")]
-    public int health = 5;
+    public int health = 3;
     public GameObject explosion, winPlatform;
     private bool isDefeated;
     public float shotSpeedUp, mineSpeedUp;

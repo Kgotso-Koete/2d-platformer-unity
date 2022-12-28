@@ -10865,7 +10865,7 @@ MonoBehaviour:
   timeBetweenShots: 1.5
   hurtTime: 1
   hitBox: {fileID: 1621553343}
-  health: 5
+  health: 3
   explosion: {fileID: 8504054771591509493, guid: 7ec3949dd8e898340a36c93285652d2f,
     type: 3}
   winPlatform: {fileID: 1772563425}
@@ -11502,6 +11502,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3200565394114730998, guid: 50aca68046abf0341bb0325603a00487,
+        type: 3}
+      propertyPath: levelToLoad
+      value: Victory_Screen
       objectReference: {fileID: 0}
     - target: {fileID: 3200565394184938573, guid: 50aca68046abf0341bb0325603a00487,
         type: 3}
