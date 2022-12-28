@@ -8,7 +8,8 @@ This is a 2d unity platformer game built while following [James Doyle](https://w
 
 ### Click here for the [video demo](https://youtu.be/Ial1l3Vx2BA)
 
-1. Play it on Windows by downloading the [Windows build folder](https://drive.google.com/drive/folders/19BZzIbHWP9lH41SGlIyEcM3PQzxlGwic?usp=share_link) and clicking on the .exe file
+1. Play it on [Simmer IO](https://get.simmer.io/) by using this [link](https://simmer.io/@Kgotso_Koete/unity-2d-platformer)
+2. Play it on Windows by downloading the [Windows build folder](https://drive.google.com/drive/folders/19BZzIbHWP9lH41SGlIyEcM3PQzxlGwic?usp=share_link) and clicking on the .exe file
 
 
 ---
@@ -48,6 +49,7 @@ This is a 2d unity platformer game built while following [James Doyle](https://w
 Follow the instructions below to build an executable file
 
 1. Build for Windows: Open Unity 2019.3.0f6, select file -> build settings, select platform, build and run
+2. Build for the Web: After building the WebGL index.html file, upload the build folder to [Simmer IO](https://get.simmer.io/)
 
 ---
 
